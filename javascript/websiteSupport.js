@@ -331,7 +331,7 @@ function darkMode(){
         myCookies.setCookie("mode", "Light", 1);
     };
 
-    if(myCookies.getCookie("mode") == "Light"){
+    if((myCookies.getCookie("mode") == "Light") || (myCookies.getCookie("mode") == undefined)){
         myCookies.setCookie("mode", "Light", 1000);
         isLightMode = true;
     } else {
